@@ -1,7 +1,7 @@
 [package]
 name = "rust-debug"
-version = "0.2.0-pre"
+version = "0.3.0-pre"
 authors = [ "Damien Schoof" ]
 
-[[lib]]
+[lib]
 name = "rust-debug"
