@@ -3,14 +3,14 @@
 #[macro_export]
 macro_rules! dump(
     ($a:expr) => (
-        println!(concat!(file!(), ":", line!(), " ", stringify!($a), " = {:?}"), $a);
+        println!(concat!(file!(), ":", line!(), " ", stringify!($a), " = {}"), $a);
         );
     ($a:expr, $($b:expr),+) => (
         println!(
             concat!(
                 file!(), ":", line!(), " ",
-                stringify!($a), " = {:?}",
-                $(", ", stringify!($b), " = {:?}"),+
+                stringify!($a), " = {}",
+                $(", ", stringify!($b), " = {}"),+
             ),
             $a,
             $($b),+
